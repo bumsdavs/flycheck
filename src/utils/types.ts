@@ -7,6 +7,15 @@ export interface FlightDetails {
   passengerInfo: PassengerDetails;
   pricing?: PricingDetails;
   dateCreated?: string;
+  returnFlight?: ReturnFlightDetails;
+}
+export interface ReturnFlightDetails  {
+  departure: LocationDetails;
+  arrival: LocationDetails;
+  stopover?: StopoverDetails;
+  passengerInfo?: PassengerDetails;
+  pricing?: PricingDetails;
+  dateCreated?: string;
 }
 
 export interface LocationDetails {
@@ -15,6 +24,7 @@ export interface LocationDetails {
   airportCode: string;
   time: string;
   date: string;
+  endDate?: string;
 }
 
 export interface StopoverDetails {
@@ -24,6 +34,7 @@ export interface StopoverDetails {
   startTime: string;
   endTime: string;
   date: string;
+  endDate?: string;
 }
 
 export interface PassengerDetails {

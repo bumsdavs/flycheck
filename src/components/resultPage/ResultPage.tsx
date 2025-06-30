@@ -10,7 +10,7 @@ interface ResultPageProps {
 }
 
 export default function ResultPage({ flightDetails }: ResultPageProps) {
-  const { flightNumber, airlineLogo, departure, arrival, stopover, passengerInfo, pricing } = flightDetails;
+  const { flightNumber, airlineLogo, departure, arrival, stopover, passengerInfo, pricing, returnFlight } = flightDetails;
 
   return (
     <div className="min-h-screen bg-[#11172b] sm:p-6">
@@ -18,11 +18,19 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
         {/* Header */}
         <div className="flex flex-col gap-4 sm:flex-row items-start sm:items-center justify-between rounded-lg px-6 py-4 bg-[#11172b] text-white">
           <div className="flex items-center space-x-4">
-            <Image src={airlineLogo} width={500} height={500} alt="Airline Logo" className="w-12 h-12" />
+            <div className="flex flex-col items-start justify-center">
+              <Image src={airlineLogo} width={500} height={500} alt="Airline Logo" className="w-12 h-12" />
+              <p className="p-0 font-semibold">DELTA</p>
+            </div>
             <div>
               <h2 className="text-2xl font-bold">Flight {flightNumber}</h2>
               <p className="text-sm">
-                {departure.city} ({departure.airportCode}) to {arrival.city} ({arrival.airportCode})
+                {departure.city} ({departure.airportCode}) to {arrival.city} ({arrival.airportCode}) -{' '}
+                {returnFlight && (
+                  <>
+                    {returnFlight.departure.city} ({returnFlight.departure.airportCode}) to {returnFlight.arrival.city} ({returnFlight.arrival.airportCode})
+                  </>
+                )}
               </p>
             </div>
           </div>
@@ -40,7 +48,7 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
         {/* Flight Details */}
         <div className="px-6 py-6">
           <h3 className="text-lg font-bold text-gray-700 mb-4">Flight Details</h3>
-          <div className="flex flex-col md:flex-row items-start md:items-center gap-[25px] md:gap-[50px] lg:gap-[100px]">
+          <div className="flex flex-col md:flex-row items-start md:items-center gap-[25px] md:gap-[50px] lg:gap-[70px]">
             {/* Departure */}
             <div className="flex items-start space-x-2">
               <FaPlaneDeparture className="text-blue-600 w-6 h-6" />
@@ -63,12 +71,12 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
                   <div>
                     <p className="text-gray-600">Stopover</p>
                     <p className="font-semibold">
-                      {stopover.startTime} - {stopover.endTime}, {stopover.date}
+                      {stopover.date}, {stopover.startTime} - {stopover.endTime}
                     </p>
                     <p className="text-gray-600">
                       {stopover.city} ({stopover.airportCode})
                     </p>
-                    <p className="text-gray-400 text-sm">Airport: {departure.airport}</p>
+                    <p className="text-gray-400 text-sm">Airport: {stopover.airport}</p>
                   </div>
                 </div>
               </div>
@@ -159,6 +167,107 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
             </div>
           </div>
         )}
+
+        {/* Return Flight Details */}
+        {returnFlight && (
+          <div className="px-6 py-6 border-t border-gray-200 mt-6">
+            <h3 className="text-lg font-bold text-gray-700 mb-4">Return Flight Details</h3>
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-[25px] md:gap-[50px] lg:gap-[100px]">
+              {/* Return Departure */}
+              <div className="flex items-start space-x-2">
+                <FaPlaneDeparture className="text-blue-600 w-6 h-6" />
+                <div>
+                  <p className="text-gray-600">Departure</p>
+                  <p className="font-semibold">
+                    {returnFlight.departure.date} : {returnFlight.departure.time}
+                  </p>
+                  <p className="text-gray-600">
+                    {returnFlight.departure.city} ({returnFlight.departure.airportCode})
+                  </p>
+                  <p className="text-gray-400 text-sm">Airport: {returnFlight.departure.airport}</p>
+                </div>
+              </div>
+
+              {/* Return Stopover */}
+              {returnFlight.stopover && (
+                <div className="flex items-start space-x-2">
+                  <FaPlane className="text-yellow-500 w-6 h-6" />
+                  <div>
+                    <p className="text-gray-600">Stopover</p>
+                    <p className="font-semibold">
+                      {returnFlight.stopover.startTime} - {returnFlight.stopover.endTime}, {returnFlight.stopover.date}
+                    </p>
+                    <p className="text-gray-600">
+                      {returnFlight.stopover.city} ({returnFlight.stopover.airportCode})
+                    </p>
+                    <p className="text-gray-400 text-sm">Airport: {returnFlight.stopover.airport}</p>
+                  </div>
+                </div>
+              )}
+
+              {/* Return Arrival */}
+              <div className="flex items-start space-x-2">
+                <FaPlaneArrival className="text-green-600 w-6 h-6" />
+                <div>
+                  <p className="text-gray-600">Arrival</p>
+                  <p className="font-semibold">
+                    {returnFlight.arrival.date} : {returnFlight.arrival.time}
+                  </p>
+                  <p className="text-gray-600">
+                    {returnFlight.arrival.city} ({returnFlight.arrival.airportCode})
+                  </p>
+                  <p className="text-gray-400 text-sm">Airport: {returnFlight.arrival.airport}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Passenger Information */}
+        {returnFlight && (
+          <div className="px-6 py-6">
+            <h3 className="text-lg font-bold text-gray-700 mb-4">Passenger Information</h3>
+            <div className="space-y-3">
+              <div className="flex items-center space-x-2">
+                <FaUser className="text-gray-700 w-5 h-5" />
+                <p className="text-gray-600">
+                  Name: <span className="font-semibold">{returnFlight.passengerInfo?.name}</span>
+                </p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <MdAirplaneTicket className="text-gray-700 w-5 h-5" />
+                <p className="text-gray-600">
+                  Ticket Number: <span className="font-semibold">{returnFlight.passengerInfo?.ticketNumber}</span>
+                </p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <MdEventSeat className="text-gray-700 w-5 h-5" />
+                <p className="text-gray-600">
+                  Seat Number: <span className="font-semibold">{returnFlight.passengerInfo?.seatNumber}</span>
+                </p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <FaUser className="text-gray-700 w-5 h-5" />
+                <p className="text-gray-600">
+                  Type: <span className="font-semibold">{returnFlight.passengerInfo?.passengerType}</span>
+                </p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <MdMarkEmailUnread className="text-gray-700 w-5 h-5" />
+                <p className="text-gray-600">
+                  Contact Email: <span className="font-semibold">{returnFlight.passengerInfo?.contactInfo.email}</span>
+                </p>
+              </div>
+              <div className="flex items-center space-x-2">
+                <FaPhone className="text-gray-700 w-5 h-5" />
+                <p className="text-gray-600">
+                  Contact Phone: <span className="font-semibold">{returnFlight.passengerInfo?.contactInfo.phone}</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Footer */}
         <div className="flex justify-between rounded-lg items-center px-6 py-4 bg-[#192241] text-white"></div>
       </div>

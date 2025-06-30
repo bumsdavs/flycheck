@@ -211,5 +211,131 @@ export const flightData: FlightDetails[] = [
       taxes: 0.0,
       total: 0.0
     }
+  },
+  {
+    flightNumber: 'AF1209-1',
+    airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
+    departure: {
+      city: 'Los Angeles, CA',
+      airportCode: 'LAX',
+      airport: 'Los Angeles International Airport',
+      time: '8:00 PM',
+      date: 'July 2, 2025'
+    },
+    arrival: {
+      city: 'Dubai, UAE',
+      airportCode: 'DXB',
+      airport: 'Dubai International Airport',
+      time: '7:30 PM',
+      date: 'July 3, 2025'
+    },
+    passengerInfo: {
+      name: 'Helen Rosemary Jones',
+      ticketNumber: 'LAX7438DFW',
+      seatNumber: '12A',
+      class: 'First Class',
+      passengerType: 'Adult',
+      dateOfBirth: '',
+      contactInfo: {
+        email: 'rosemaryhelen42@gmail.com',
+        phone: '+1-205-386-3936'
+      }
+    },
+    pricing: {
+      ticketPrice: 0.0,
+      taxes: 0.0,
+      total: 0.0
+    },
+    returnFlight: {
+      departure: {
+        city: 'Dubai, UAE',
+        airportCode: 'DXB',
+        airport: 'Dubai International Airport',
+        time: '10:00 AM',
+        date: 'July 23, 2025'
+      },
+      arrival: {
+        city: 'Raleigh, NC',
+        airportCode: 'RDU',
+        airport: 'Raleigh-Durham International Airport',
+        time: '4:00 PM',
+        date: 'July 23, 2025'
+      },
+      passengerInfo: {
+        name: 'Helen Rosemary Jones',
+        ticketNumber: 'LAX7464D48A',
+        seatNumber: '12A',
+        class: 'First Class',
+        passengerType: 'Adult',
+        dateOfBirth: '',
+        contactInfo: {
+          email: 'rosemaryhelen42@gmail.com',
+          phone: '+1-205-386-3936'
+        }
+      }
+    }
+  },
+  {
+    flightNumber: 'AF1209-2',
+    airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
+    departure: {
+      city: 'Los Angeles, CA',
+      airportCode: 'LAX',
+      airport: 'Los Angeles International Airport',
+      time: '8:00 PM',
+      date: 'July 2, 2025'
+    },
+    arrival: {
+      city: 'Dubai, UAE',
+      airportCode: 'DXB',
+      airport: 'Dubai International Airport',
+      time: '7:30 PM',
+      date: 'July 3, 2025'
+    },
+    passengerInfo: {
+      name: 'Helen Rosemary Jones',
+      ticketNumber: 'LAX7438DFX',
+      seatNumber: '13A',
+      class: 'First Class',
+      passengerType: 'Adult',
+      dateOfBirth: '',
+      contactInfo: {
+        email: 'rosemaryhelen42@gmail.com',
+        phone: '+1-205-386-3936'
+      }
+    },
+    pricing: {
+      ticketPrice: 0.0,
+      taxes: 0.0,
+      total: 0.0
+    },
+    returnFlight: {
+      departure: {
+        city: 'Dubai, UAE',
+        airportCode: 'DXB',
+        airport: 'Dubai International Airport',
+        time: '10:00 AM',
+        date: 'July 23, 2025'
+      },
+      arrival: {
+        city: 'Orlando, FL',
+        airportCode: 'MCO',
+        airport: 'Orlando International Airport',
+        time: '5:45 PM',
+        date: 'July 23, 2025'
+      },
+      passengerInfo: {
+        name: 'Helen Rosemary Jones',
+        ticketNumber: 'LAX7464D48B',
+        seatNumber: '14A',
+        class: 'First Class',
+        passengerType: 'Adult',
+        dateOfBirth: '',
+        contactInfo: {
+          email: 'rosemaryhelen42@gmail.com',
+          phone: '+1-205-386-3936'
+        }
+      }
+    }
   }
 ];
