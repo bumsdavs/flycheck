@@ -14,20 +14,21 @@ function TrackFlight() {
   const [error, setError] = useState<string | null>(null);
 
   const searchParams = useSearchParams();
-  const flightNumber = searchParams.get('flightNumber');
+  const query = searchParams.get('query');
 
   useEffect(() => {
-    if (flightNumber) {
-      const foundFlight = flightData.find(flight => flight.flightNumber === flightNumber);
+    if (query) {
+      const foundFlight = flightData.find(flight => flight.flightNumber?.toLowerCase() === query.toLowerCase() || flight.passengerInfo?.trackingNumber?.toLowerCase() === query.toLowerCase());
+
       if (foundFlight) {
         setFlightDetails(foundFlight);
-        setError(null); // Clear any previous error
+        setError(null);
       } else {
         setFlightDetails(null);
         setError('Flight not found');
       }
     }
-  }, [flightNumber]);
+  }, [query]);
 
   return (
     <div>

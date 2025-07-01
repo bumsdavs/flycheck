@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 
 export default function TrackingForm() {
   const [flightNumber, setFlightNumber] = useState<string>('');
+  const [query, setQuery] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>('');
 
@@ -19,7 +20,7 @@ export default function TrackingForm() {
     // Simulate an async operation
     setTimeout(() => {
       setLoading(false);
-      router.push(`/track?flightNumber=${flightNumber}`);
+      router.push(`/track?query=${query}`);
     }, 2000);
   };
 
@@ -31,8 +32,8 @@ export default function TrackingForm() {
           id="flightNumber"
           className="w-full outline-none text-base placeholder:text-sm placeholder:text-[#3b3b3b] border-none h-[60px] py-2 pr-[120px] rounded p-3"
           placeholder="Enter your flight number"
-          value={flightNumber}
-          onChange={e => setFlightNumber(e.target.value)}
+           value={query}
+           onChange={e => setQuery(e.target.value)}
           required
         />
         <button type="submit" className="absolute right-0 top-0 w-[100px] h-[60px] bg-[#d40511] hover:bg-[#eb131e] text-base font-semibold text-white rounded-r" disabled={loading}>
