@@ -231,7 +231,7 @@ export const flightData: FlightDetails[] = [
     },
     passengerInfo: {
       name: 'Helen Rosemary Jones',
-      ticketNumber: 'LAX7438DFW',
+      trackingNumber: 'LAX7438DFW',
       seatNumber: '12A',
       class: 'First Class',
       passengerType: 'Adult',
@@ -263,7 +263,7 @@ export const flightData: FlightDetails[] = [
       },
       passengerInfo: {
         name: 'Helen Rosemary Jones',
-        ticketNumber: 'LAX7464D48A',
+        trackingNumber: 'LAX7464D48A',
         seatNumber: '12A',
         class: 'First Class',
         passengerType: 'Adult',
@@ -294,7 +294,7 @@ export const flightData: FlightDetails[] = [
     },
     passengerInfo: {
       name: 'Helen Rosemary Jones',
-      ticketNumber: 'LAX7438DFX',
+      trackingNumber: 'LAX7438DFX',
       seatNumber: '13A',
       class: 'First Class',
       passengerType: 'Adult',
@@ -326,7 +326,7 @@ export const flightData: FlightDetails[] = [
       },
       passengerInfo: {
         name: 'Helen Rosemary Jones',
-        ticketNumber: 'LAX7464D48B',
+        trackingNumber: 'LAX7464D48B',
         seatNumber: '14A',
         class: 'First Class',
         passengerType: 'Adult',

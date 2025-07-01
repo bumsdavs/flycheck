@@ -110,9 +110,15 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
             </div>
             <div className="flex items-center space-x-2">
               <MdAirplaneTicket className="text-gray-700 w-5 h-5" />
-              <p className="text-gray-600">
-                Ticket Number: <span className="font-semibold">{passengerInfo.ticketNumber}</span>
-              </p>
+              {passengerInfo.trackingNumber ? (
+                <p className="text-gray-600">
+                  Tracking Number: <span className="font-semibold">{passengerInfo.trackingNumber}</span>
+                </p>
+              ) : (
+                <p className="text-gray-600">
+                  Ticket Number: <span className="font-semibold">{passengerInfo.ticketNumber}</span>
+                </p>
+              )}
             </div>
             <div className="flex items-center space-x-2">
               <MdEventSeat className="text-gray-700 w-5 h-5" />
@@ -236,9 +242,15 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
               </div>
               <div className="flex items-center space-x-2">
                 <MdAirplaneTicket className="text-gray-700 w-5 h-5" />
-                <p className="text-gray-600">
-                  Ticket Number: <span className="font-semibold">{returnFlight.passengerInfo?.ticketNumber}</span>
-                </p>
+                {returnFlight.passengerInfo?.trackingNumber ? (
+                  <p className="text-gray-600">
+                    Tracking Number: <span className="font-semibold">{returnFlight.passengerInfo?.trackingNumber}</span>
+                  </p>
+                ) : (
+                  <p className="text-gray-600">
+                    Ticket Number: <span className="font-semibold">{returnFlight.passengerInfo?.ticketNumber}</span>
+                  </p>
+                )}
               </div>
               <div className="flex items-center space-x-2">
                 <MdEventSeat className="text-gray-700 w-5 h-5" />
