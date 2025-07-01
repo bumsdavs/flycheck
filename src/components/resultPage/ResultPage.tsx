@@ -112,7 +112,7 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
               <MdAirplaneTicket className="text-gray-700 w-5 h-5" />
               {passengerInfo.confirmationNumber ? (
                 <p className="text-gray-600">
-                  Tracking Number: <span className="font-semibold">{passengerInfo.confirmationNumber}</span>
+                  Confirmation Number: <span className="font-semibold">{passengerInfo.confirmationNumber}</span>
                 </p>
               ) : (
                 <p className="text-gray-600">
@@ -244,7 +244,7 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
                 <MdAirplaneTicket className="text-gray-700 w-5 h-5" />
                 {returnFlight.passengerInfo?.confirmationNumber ? (
                   <p className="text-gray-600">
-                    Tracking Number: <span className="font-semibold">{returnFlight.passengerInfo?.confirmationNumber}</span>
+                    Confirmation Number: <span className="font-semibold">{returnFlight.passengerInfo?.confirmationNumber}</span>
                   </p>
                 ) : (
                   <p className="text-gray-600">
