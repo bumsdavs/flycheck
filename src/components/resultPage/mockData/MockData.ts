@@ -213,7 +213,7 @@ export const flightData: FlightDetails[] = [
     }
   },
   {
-    flightNumber: 'AF1209-1',
+    flightNumber: 'AF1209',
     airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
     departure: {
       city: 'Los Angeles, CA',
@@ -276,7 +276,7 @@ export const flightData: FlightDetails[] = [
     }
   },
   {
-    flightNumber: 'AF1209-2',
+    flightNumber: 'AF1209',
     airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
     departure: {
       city: 'Los Angeles, CA',
