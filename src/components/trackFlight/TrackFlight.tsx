@@ -16,19 +16,23 @@ function TrackFlight() {
   const searchParams = useSearchParams();
   const query = searchParams.get('query');
 
-  useEffect(() => {
-    if (query) {
-      const foundFlight = flightData.find(flight => flight.flightNumber?.toLowerCase() === query.toLowerCase() || flight.passengerInfo?.trackingNumber?.toLowerCase() === query.toLowerCase());
+ useEffect(() => {
+  if (query) {
+    const foundFlight = flightData.find(flight =>
+      flight.flightNumber?.toLowerCase() === query.toLowerCase() ||
+      flight.passengerInfo?.trackingNumber?.toLowerCase() === query.toLowerCase() ||
+      flight.returnFlight?.passengerInfo?.trackingNumber?.toLowerCase() === query.toLowerCase()
+    );
 
-      if (foundFlight) {
-        setFlightDetails(foundFlight);
-        setError(null);
-      } else {
-        setFlightDetails(null);
-        setError('Flight not found');
-      }
+    if (foundFlight) {
+      setFlightDetails(foundFlight);
+      setError(null);
+    } else {
+      setFlightDetails(null);
+      setError('Flight not found');
     }
-  }, [query]);
+  }
+}, [query]);
 
   return (
     <div>
