@@ -20,8 +20,8 @@ function TrackFlight() {
   if (query) {
     const foundFlight = flightData.find(flight =>
       flight.flightNumber?.toLowerCase() === query.toLowerCase() ||
-      flight.passengerInfo?.trackingNumber?.toLowerCase() === query.toLowerCase() ||
-      flight.returnFlight?.passengerInfo?.trackingNumber?.toLowerCase() === query.toLowerCase()
+      flight.passengerInfo?.confirmationNumber?.toLowerCase() === query.toLowerCase() ||
+      flight.returnFlight?.passengerInfo?.confirmationNumber?.toLowerCase() === query.toLowerCase()
     );
 
     if (foundFlight) {

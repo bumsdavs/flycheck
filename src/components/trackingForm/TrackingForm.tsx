@@ -31,7 +31,7 @@ export default function TrackingForm() {
           type="text"
           id="flightNumber"
           className="w-full outline-none text-base placeholder:text-sm placeholder:text-[#3b3b3b] border-none h-[60px] py-2 pr-[120px] rounded p-3"
-          placeholder="Enter your flight number"
+          placeholder="Enter your tracking number"
            value={query}
            onChange={e => setQuery(e.target.value)}
           required

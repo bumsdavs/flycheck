@@ -40,7 +40,7 @@ export interface StopoverDetails {
 export interface PassengerDetails {
   name: string;
   ticketNumber?: string;
-  trackingNumber?: string;
+  confirmationNumber?: string;
   seatNumber: string;
   class: string;
   passengerType: 'Adult' | 'Child' | 'Infant';

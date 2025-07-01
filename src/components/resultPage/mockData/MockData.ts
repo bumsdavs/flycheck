@@ -231,7 +231,7 @@ export const flightData: FlightDetails[] = [
     },
     passengerInfo: {
       name: 'Helen Rosemary Jones',
-      trackingNumber: 'AF1208',
+      confirmationNumber: 'Gy76J0',
       seatNumber: '12A',
       class: 'First Class',
       passengerType: 'Adult',
@@ -263,7 +263,7 @@ export const flightData: FlightDetails[] = [
       },
       passengerInfo: {
         name: 'Helen Rosemary Jones',
-        trackingNumber: 'AF1208',
+        confirmationNumber: 'Gy76J0',
         seatNumber: '12A',
         class: 'First Class',
         passengerType: 'Adult',
@@ -294,7 +294,7 @@ export const flightData: FlightDetails[] = [
     },
     passengerInfo: {
       name: 'Helen Rosemary Jones',
-      trackingNumber: 'AF1209',
+      confirmationNumber: 'Gy76J1',
       seatNumber: '13A',
       class: 'First Class',
       passengerType: 'Adult',
@@ -326,7 +326,7 @@ export const flightData: FlightDetails[] = [
       },
       passengerInfo: {
         name: 'Helen Rosemary Jones',
-        trackingNumber: 'AF1209',
+        confirmationNumber: 'Gy76J1',
         seatNumber: '14A',
         class: 'First Class',
         passengerType: 'Adult',
