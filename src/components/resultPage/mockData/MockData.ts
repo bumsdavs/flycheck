@@ -231,7 +231,7 @@ export const flightData: FlightDetails[] = [
     },
     passengerInfo: {
       name: 'Helen Rosemary Jones',
-      trackingNumber: 'LAX7438DFW',
+      trackingNumber: 'AF1208',
       seatNumber: '12A',
       class: 'First Class',
       passengerType: 'Adult',
@@ -263,7 +263,7 @@ export const flightData: FlightDetails[] = [
       },
       passengerInfo: {
         name: 'Helen Rosemary Jones',
-        trackingNumber: 'LAX7464D48A',
+        trackingNumber: 'AF1208',
         seatNumber: '12A',
         class: 'First Class',
         passengerType: 'Adult',
@@ -294,7 +294,7 @@ export const flightData: FlightDetails[] = [
     },
     passengerInfo: {
       name: 'Helen Rosemary Jones',
-      trackingNumber: 'LAX7438DFX',
+      trackingNumber: 'AF1209',
       seatNumber: '13A',
       class: 'First Class',
       passengerType: 'Adult',
@@ -326,7 +326,7 @@ export const flightData: FlightDetails[] = [
       },
       passengerInfo: {
         name: 'Helen Rosemary Jones',
-        trackingNumber: 'LAX7464D48B',
+        trackingNumber: 'AF1209',
         seatNumber: '14A',
         class: 'First Class',
         passengerType: 'Adult',
