@@ -149,7 +149,7 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
 
         {/* Price and Payment Details */}
         {pricing && (
-          <div className="px-6 hidden py-6 bg-gray-50">
+          <div className="px-6 py-6 bg-gray-50">
             <h3 className="text-lg font-bold text-gray-700 mb-4">Payment Details</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-2">

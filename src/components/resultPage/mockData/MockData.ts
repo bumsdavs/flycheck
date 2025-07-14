@@ -337,5 +337,40 @@ export const flightData: FlightDetails[] = [
         }
       }
     }
+  },
+  {
+    flightNumber: 'AF1210',
+    airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
+    departure: {
+      city: 'Denver, CO',
+      airportCode: 'DEN',
+      airport: 'Denver international Airport',
+      time: '11:00 AM',
+      date: 'July 15, 2025'
+    },
+    arrival: {
+      city: 'Lancaster, CA',
+      airportCode: 'WJF',
+      airport: 'General William j. Fox Airfield',
+      time: '8:00 PM',
+      date: 'July 15, 2025'
+    },
+    passengerInfo: {
+      name: 'Lilian Willson',
+      confirmationNumber: 'LAX7438DFX',
+      seatNumber: '13A',
+      class: 'Premium Economy',
+      passengerType: 'Adult',
+      dateOfBirth: 'April 12, 1995',
+      contactInfo: {
+        email: 'lilianwillson17@gmail.com',
+        phone: '+1-303-652-8179'
+      }
+    },
+    pricing: {
+      ticketPrice: 650.0,
+      taxes: 0.0,
+      total: 650.0
+    },
   }
 ];
