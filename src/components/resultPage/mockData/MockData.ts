@@ -319,7 +319,7 @@ export const flightData: FlightDetails[] = [
     }
   },
   {
-    flightNumber: 'AF1210',
+    flightNumber: 'DTK253',
     airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
     departure: {
       city: 'Denver, CO',
@@ -337,7 +337,7 @@ export const flightData: FlightDetails[] = [
     },
     passengerInfo: {
       name: 'Lilian Willson',
-      confirmationNumber: 'LAX7438-36DVDFX',
+      confirmationNumber: 'LAX7438DFX',
       seatNumber: '13A',
       class: 'Premium Economy',
       passengerType: 'Adult',
