@@ -61,11 +61,6 @@ export const flightData: FlightDetails[] = [
         phone: '***-***-***'
       }
     },
-    pricing: {
-      ticketPrice: 0.0,
-      taxes: 0.0,
-      total: 0.0
-    }
   },
   {
     flightNumber: 'AF1203',
@@ -101,11 +96,6 @@ export const flightData: FlightDetails[] = [
         phone: '***-***-***'
       }
     },
-    pricing: {
-      ticketPrice: 0.0,
-      taxes: 0.0,
-      total: 0.0
-    }
   },
   {
     flightNumber: 'AF1205',
@@ -136,11 +126,6 @@ export const flightData: FlightDetails[] = [
         phone: '***-***-***'
       }
     },
-    pricing: {
-      ticketPrice: 0.0,
-      taxes: 0.0,
-      total: 0.0
-    }
   },
   {
     flightNumber: 'AF1206',
@@ -171,11 +156,6 @@ export const flightData: FlightDetails[] = [
         phone: '***-***-***'
       }
     },
-    pricing: {
-      ticketPrice: 0.0,
-      taxes: 0.0,
-      total: 0.0
-    }
   },
   {
     flightNumber: 'AF1207',
@@ -357,7 +337,7 @@ export const flightData: FlightDetails[] = [
     },
     passengerInfo: {
       name: 'Lilian Willson',
-      confirmationNumber: 'LAX7438DFX',
+      confirmationNumber: 'LAX7438-36DVDFX',
       seatNumber: '13A',
       class: 'Premium Economy',
       passengerType: 'Adult',
