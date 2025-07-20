@@ -3,6 +3,7 @@ import { FlightDetails } from '@/utils/types';
 export const flightData: FlightDetails[] = [
   {
     flightNumber: 'SAMPLE',
+    airlineName: 'DELTA',
     airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
     departure: {
       city: 'New York',
@@ -36,6 +37,7 @@ export const flightData: FlightDetails[] = [
   },
   {
     flightNumber: 'AF1202',
+    airlineName: 'DELTA',
     airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
     departure: {
       city: 'Atlanta',
@@ -64,6 +66,7 @@ export const flightData: FlightDetails[] = [
   },
   {
     flightNumber: 'AF1203',
+    airlineName: 'DELTA',
     airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
     departure: {
       city: 'San Francisco, CA',
@@ -99,6 +102,7 @@ export const flightData: FlightDetails[] = [
   },
   {
     flightNumber: 'AF1205',
+    airlineName: 'DELTA',
     airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
     departure: {
       city: ' Killeen, TX, USA',
@@ -129,6 +133,7 @@ export const flightData: FlightDetails[] = [
   },
   {
     flightNumber: 'AF1206',
+    airlineName: 'DELTA',
     airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
     departure: {
       city: 'Lufthavnsboulevarden, Kastrup, Denmark',
@@ -159,6 +164,7 @@ export const flightData: FlightDetails[] = [
   },
   {
     flightNumber: 'AF1207',
+    airlineName: 'DELTA',
     airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
     departure: {
       city: 'Los Angeles, CA, USA',
@@ -194,6 +200,7 @@ export const flightData: FlightDetails[] = [
   },
   {
     flightNumber: 'AF1208',
+    airlineName: 'DELTA',
     airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
     departure: {
       city: 'Los Angeles, CA',
@@ -257,6 +264,7 @@ export const flightData: FlightDetails[] = [
   },
   {
     flightNumber: 'AF1209',
+    airlineName: 'DELTA',
     airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
     departure: {
       city: 'Los Angeles, CA',
@@ -320,6 +328,7 @@ export const flightData: FlightDetails[] = [
   },
   {
     flightNumber: 'DTK253',
+    airlineName: 'DELTA',
     airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
     departure: {
       city: 'Denver, CO',
@@ -351,6 +360,37 @@ export const flightData: FlightDetails[] = [
       ticketPrice: 650.0,
       taxes: 0.0,
       total: 650.0
+    },
+  },
+  {
+    flightNumber: 'DTK254',
+    airlineName: 'American Airlines',
+    airlineLogo: 'https://i.imgur.com/u4goZq0.png',
+    departure: {
+      city: 'Charlotte, NC',
+      airportCode: 'CLT',
+      airport: 'Douglas Charlotte Airport',
+      time: '11:00 AM',
+      date: 'July 26, 2025'
+    },
+    arrival: {
+      city: 'Detroit, MI',
+      airportCode: 'DTW',
+      airport: 'Detroit Metropolitan Airport',
+      time: '1:00 PM',
+      date: 'July 26, 2025'
+    },
+    passengerInfo: {
+      name: 'Sasha Kelly',
+      confirmationNumber: 'LAX7434DFX',
+      seatNumber: '13A',
+      class: 'Premium Economy',
+      passengerType: 'Adult',
+      dateOfBirth: 'April 12, 1995',
+      contactInfo: {
+        email: 's***@gmail.com',
+        phone: '***-***-***-***'
+      }
     },
   }
 ];

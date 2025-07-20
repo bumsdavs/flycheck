@@ -10,17 +10,17 @@ interface ResultPageProps {
 }
 
 export default function ResultPage({ flightDetails }: ResultPageProps) {
-  const { flightNumber, airlineLogo, departure, arrival, stopover, passengerInfo, pricing, returnFlight } = flightDetails;
+  const { flightNumber, airlineName, airlineLogo, departure, arrival, stopover, passengerInfo, pricing, returnFlight } = flightDetails;
 
   return (
     <div className="min-h-screen bg-[#11172b] sm:p-6">
       <div className="custom_container bg-white rounded-lg shadow-lg overflow-hidden">
         {/* Header */}
         <div className="flex flex-col gap-4 sm:flex-row items-start sm:items-center justify-between rounded-lg px-6 py-4 bg-[#11172b] text-white">
-          <div className="flex items-center space-x-4">
-            <div className="flex flex-col items-start justify-center">
+          <div className="flex flex-col space-y-3">
+            <div className="flex items-center">
+              <p className="p-0 text-xl font-semibold">{airlineName}</p>
               <Image src={airlineLogo} width={500} height={500} alt="Airline Logo" className="w-12 h-12" />
-              <p className="p-0 font-semibold">DELTA</p>
             </div>
             <div>
               <h2 className="text-2xl font-bold">Flight {flightNumber}</h2>

@@ -1,5 +1,6 @@
 export interface FlightDetails {
   flightNumber: string;
+  airlineName?: string;
   airlineLogo: string;
   departure: LocationDetails;
   arrival: LocationDetails;
