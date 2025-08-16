@@ -18,12 +18,12 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
         {/* Header */}
         <div className="flex flex-col gap-4 sm:flex-row items-start sm:items-center justify-between rounded-lg px-6 py-4 bg-[#11172b] text-white">
           <div className="flex flex-col space-y-3">
-            <div className="flex items-center">
+            <div className="flex items-center gap-2">
               <p className="p-0 text-xl font-semibold">{airlineName}</p>
-              <Image src={airlineLogo} width={500} height={500} alt="Airline Logo" className="w-12 h-12" />
+              <Image src={airlineLogo} width={500} height={500} alt="Airline Logo" className="w-11 h-11" />
             </div>
             <div>
-              <h2 className="text-2xl font-bold">Flight {flightNumber}</h2>
+              <h2 className="text-xl font-bold">Flight {flightNumber}</h2>
               <p className="text-sm">
                 {departure.city} ({departure.airportCode}) to {arrival.city} ({arrival.airportCode}) -{' '}
                 {returnFlight && (

@@ -392,5 +392,36 @@ export const flightData: FlightDetails[] = [
         phone: '***-***-***-***'
       }
     },
+  },
+  {
+    flightNumber: 'DTK255',
+    airlineName: 'DELTA',
+    airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
+    departure: {
+      city: 'Roseboro, NC',
+      airportCode: 'RDU',
+      airport: 'Raleigh-Durham Int. Airport',
+      time: '6:30 PM',
+      date: 'August 16, 2025'
+    },
+    arrival: {
+      city: 'Eugene, OR',
+      airportCode: 'EUG',
+      airport: 'Eugene Airport',
+      time: '10:46 PM',
+      date: 'August 16, 2025'
+    },
+    passengerInfo: {
+      name: 'Jessica Kellogg',
+      confirmationNumber: 'DKX7435DFX',
+      seatNumber: '13A',
+      class: 'Economy',
+      passengerType: 'Adult',
+      dateOfBirth: '*****',
+      contactInfo: {
+        email: 'j***@gmail.com',
+        phone: '***-***-***-***'
+      }
+    },
   }
 ];
