@@ -423,5 +423,36 @@ export const flightData: FlightDetails[] = [
         phone: '***-***-***-***'
       }
     },
-  }
+  },
+ {
+    flightNumber: 'DTK256',
+    airlineName: 'DELTA',
+    airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
+    departure: {
+      city: 'Queensland, Australia',
+      airportCode: 'BNE',
+      airport: 'Queensland, Australia',
+      time: '10:00 AM - AEST',
+      date: 'October 14, 2025'
+    },
+    arrival: {
+      city: 'Los Angeles, CA',
+      airportCode: 'LAX',
+      airport: 'Los Angeles International Airport',
+      time: '11:00 AM - PDT',
+      date: 'October 14, 2025'
+    },
+    passengerInfo: {
+      name: 'Jessica Kellogg',
+      confirmationNumber: 'DKX7435DFX',
+      seatNumber: '13A',
+      class: 'Economy',
+      passengerType: 'Adult',
+      dateOfBirth: '*****',
+      contactInfo: {
+        email: 'j***@gmail.com',
+        phone: '***-***-***-***'
+      }
+    },
+  } 
 ];
