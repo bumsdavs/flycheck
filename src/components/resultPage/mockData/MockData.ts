@@ -424,7 +424,7 @@ export const flightData: FlightDetails[] = [
       }
     },
   },
- {
+  {
     flightNumber: 'DTK256',
     airlineName: 'DELTA',
     airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
@@ -450,7 +450,7 @@ export const flightData: FlightDetails[] = [
       passengerType: 'Adult',
       dateOfBirth: '*****',
       contactInfo: {
-        email: 'j***@gmail.com',
+        email: 'joanmt1@hotmail.com',
         phone: '***-***-***-***'
       }
     },
