@@ -454,5 +454,37 @@ export const flightData: FlightDetails[] = [
         phone: '***-***-***-***'
       }
     },
-  } 
+  },
+  {
+    flightNumber: 'DTK257',
+    airlineName: 'DELTA',
+    airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
+    departure: {
+      city: 'Atlanta, GA',
+      airportCode: 'ATL',
+      airport:  'Hartsfield-Jackson Atlanta International Airport',
+      time: '10:45 AM',
+      date: 'October 20, 2025'
+
+    },
+    arrival: {
+       city: 'Baton Rouge, LA',
+      airportCode: 'BTR',
+      airport: 'Baton Rouge Metropolitan Airport',
+      time: '12:24 AM',
+      date: 'October 20, 2025'
+    },
+    passengerInfo: {
+      name: 'Rose Elmer',
+      confirmationNumber: 'DKX7437DFX',
+      seatNumber: '13A',
+      class: 'Economy',
+      passengerType: 'Adult',
+      dateOfBirth: '*****',
+      contactInfo: {
+        email: 'roseelmerxo@gmail.com',
+        phone: '(754)-201-9228'
+      }
+    },
+  }
 ];
