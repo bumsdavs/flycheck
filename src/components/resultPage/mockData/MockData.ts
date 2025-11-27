@@ -62,7 +62,7 @@ export const flightData: FlightDetails[] = [
         email: '******',
         phone: '***-***-***'
       }
-    },
+    }
   },
   {
     flightNumber: 'AF1203',
@@ -98,7 +98,7 @@ export const flightData: FlightDetails[] = [
         email: '******',
         phone: '***-***-***'
       }
-    },
+    }
   },
   {
     flightNumber: 'AF1205',
@@ -129,7 +129,7 @@ export const flightData: FlightDetails[] = [
         email: 'suebynum44@gmail.com',
         phone: '***-***-***'
       }
-    },
+    }
   },
   {
     flightNumber: 'AF1206',
@@ -160,7 +160,7 @@ export const flightData: FlightDetails[] = [
         email: '******',
         phone: '***-***-***'
       }
-    },
+    }
   },
   {
     flightNumber: 'AF1207',
@@ -360,7 +360,7 @@ export const flightData: FlightDetails[] = [
       ticketPrice: 650.0,
       taxes: 0.0,
       total: 650.0
-    },
+    }
   },
   {
     flightNumber: 'DTK254',
@@ -391,7 +391,7 @@ export const flightData: FlightDetails[] = [
         email: 's***@gmail.com',
         phone: '***-***-***-***'
       }
-    },
+    }
   },
   {
     flightNumber: 'DTK255',
@@ -422,7 +422,7 @@ export const flightData: FlightDetails[] = [
         email: 'j***@gmail.com',
         phone: '***-***-***-***'
       }
-    },
+    }
   },
   {
     flightNumber: 'DTK256',
@@ -453,7 +453,7 @@ export const flightData: FlightDetails[] = [
         email: 'joanmt1@hotmail.com',
         phone: '***-***-***-***'
       }
-    },
+    }
   },
   {
     flightNumber: 'DTK257',
@@ -462,13 +462,12 @@ export const flightData: FlightDetails[] = [
     departure: {
       city: 'Atlanta, GA',
       airportCode: 'ATL',
-      airport:  'Hartsfield-Jackson Atlanta International Airport',
+      airport: 'Hartsfield-Jackson Atlanta International Airport',
       time: '10:45 AM',
       date: 'October 20, 2025'
-
     },
     arrival: {
-       city: 'Baton Rouge, LA',
+      city: 'Baton Rouge, LA',
       airportCode: 'BTR',
       airport: 'Baton Rouge Metropolitan Airport',
       time: '12:24 AM',
@@ -485,6 +484,37 @@ export const flightData: FlightDetails[] = [
         email: 'roseelmerxo@gmail.com',
         phone: '(754)-201-9228'
       }
+    }
+  },
+  {
+    flightNumber: 'DTK258',
+    airlineName: 'DELTA',
+    airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
+    departure: {
+      city: 'Houston, TX',
+      airportCode: 'IAH',
+      airport: 'Gorge Bush Intercontinental Airport',
+      time: '12:02 PM',
+      date: 'Dec 3, 2025'
     },
+    arrival: {
+      city: 'Lafayette, LA',
+      airportCode: 'LFT',
+      airport: 'Lafayette Regional Airport',
+      time: '01:11 PM',
+      date: 'Dec 3, 2025'
+    },
+    passengerInfo: {
+      name: 'Kelly Godson',
+      confirmationNumber: 'DKX7438DFX',
+      seatNumber: '13A',
+      class: 'Economy',
+      passengerType: 'Adult',
+      dateOfBirth: 'July 7, 1995',
+      contactInfo: {
+        email: 'kgodson94@gmail.com',
+        phone: '+1 915-348-2617'
+      }
+    }
   }
 ];
