@@ -516,5 +516,80 @@ export const flightData: FlightDetails[] = [
         phone: '+1 915-348-2617'
       }
     }
+  },
+  {
+    flightNumber: 'DTK259',
+    airlineName: 'DELTA',
+    airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
+    departure: {
+      city: 'Bangor, ME',
+      airportCode: 'BGR',
+      airport: 'Bangor International Airport',
+      time: '9:00 AM',
+      date: 'December 24, 2025'
+    },
+    stopover: {
+      city: 'New York, NY',
+      airportCode: 'JFK',
+      airport: 'John F. Kennedy International Airport',
+      startTime: '11:30 AM',
+      endTime: '1:00 PM',
+      date: 'December 24, 2025'
+    },
+    arrival: {
+      city: 'Chicago, IL',
+      airportCode: 'ORD',
+      airport: "O'Hare International Airport",
+      time: '3:30 PM',
+      date: 'December 24, 2025'
+    },
+    passengerInfo: {
+      name: 'Deborah Betsy Carter',
+      confirmationNumber: 'DKX7439DFX',
+      seatNumber: '12A',
+      class: 'Business Class',
+      passengerType: 'Adult',
+      dateOfBirth: '',
+      contactInfo: {
+        email: 'd**@gmail.com',
+        phone: '******'
+      }
+    },
+    returnFlight: {
+      departure: {
+        city: 'Chicago, IL',
+        airportCode: 'ORD',
+        airport: "O'Hare International Airport",
+        time: '10:00 AM',
+        date: 'January 2, 2026'
+      },
+      stopover: {
+        city: 'New York, NY',
+        airportCode: 'JFK',
+        airport: 'John F. Kennedy International Airport',
+        startTime: '1:30 PM',
+        endTime: '3:00 PM',
+        date: 'January 2, 2026'
+      },
+      arrival: {
+        city: 'Bangor, ME',
+        airportCode: 'BGR',
+        airport: 'Bangor International Airport',
+        time: '5:30 PM',
+        date: 'January 2, 2026'
+      },
+      passengerInfo: {
+        name: 'Deborah Betsy Carter',
+        confirmationNumber: 'DKX7439DFX',
+        seatNumber: '12A',
+        class: 'Business Class',
+        passengerType: 'Adult',
+        dateOfBirth: '',
+        contactInfo: {
+          email: 'd**@gmail.com',
+          phone: '******'
+        }
+      }
+    }
   }
 ];
