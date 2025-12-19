@@ -36,7 +36,7 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
           </div>
           <div className="flex items-center justify-between w-full sm:max-w-max gap-5">
             <div className="sm:text-right">
-              <p className="text-lg font-semibold">Seat {passengerInfo.seatNumber}</p>
+              <p className="text-lg font-semibold">Seat {passengerInfo.seatNumber} {returnFlight?.passengerInfo?.seatNumber && `. ${returnFlight?.passengerInfo?.seatNumber}`}</p>
               <p className="text-sm">{passengerInfo.class}</p>
             </div>
             <Link href="/" className="bg-[#192241] text-white font-bold py-2 px-4 rounded">

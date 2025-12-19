@@ -537,10 +537,10 @@ export const flightData: FlightDetails[] = [
       date: 'December 24, 2025'
     },
     arrival: {
-      city: 'Chicago, IL',
-      airportCode: 'ORD',
-      airport: "O'Hare International Airport",
-      time: '3:30 PM',
+      city: 'Cedar Rapids, IA',
+      airportCode: 'CID',
+      airport: 'The Eastern Iowa Airport',
+      time: '4:30 PM',
       date: 'December 24, 2025'
     },
     passengerInfo: {
@@ -557,9 +557,9 @@ export const flightData: FlightDetails[] = [
     },
     returnFlight: {
       departure: {
-        city: 'Chicago, IL',
-        airportCode: 'ORD',
-        airport: "O'Hare International Airport",
+        city: 'Cedar Rapids, IA',
+        airportCode: 'CID',
+        airport: 'The Eastern Iowa Airport',
         time: '10:00 AM',
         date: 'January 2, 2026'
       },
@@ -575,13 +575,13 @@ export const flightData: FlightDetails[] = [
         city: 'Bangor, ME',
         airportCode: 'BGR',
         airport: 'Bangor International Airport',
-        time: '5:30 PM',
+        time: '6:00 PM',
         date: 'January 2, 2026'
       },
       passengerInfo: {
         name: 'Deborah Betsy Carter',
         confirmationNumber: 'DKX7439DFX',
-        seatNumber: '12A',
+        seatNumber: '21A',
         class: 'Business Class',
         passengerType: 'Adult',
         dateOfBirth: '',
