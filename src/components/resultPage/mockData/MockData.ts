@@ -488,26 +488,26 @@ export const flightData: FlightDetails[] = [
   },
   {
     flightNumber: 'DTK258',
-    airlineName: 'DELTA',
-    airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
+    airlineName: 'American Airlines',
+    airlineLogo: 'https://i.imgur.com/u4goZq0.png',
     departure: {
       city: 'Houston, TX',
       airportCode: 'IAH',
       airport: 'Gorge Bush Intercontinental Airport',
-      time: '12:02 PM',
-      date: 'Dec 3, 2025'
+      time: '02:02 PM',
+      date: 'Jan 2, 2025'
     },
     arrival: {
       city: 'Lafayette, LA',
       airportCode: 'LFT',
       airport: 'Lafayette Regional Airport',
-      time: '01:11 PM',
-      date: 'Dec 3, 2025'
+      time: '03:11 PM',
+      date: 'Jan 2, 2025'
     },
     passengerInfo: {
       name: 'Kelly Godson',
       confirmationNumber: 'DKX7438DFX',
-      seatNumber: '13A',
+      seatNumber: '21B',
       class: 'Economy',
       passengerType: 'Adult',
       dateOfBirth: 'July 7, 1995',
