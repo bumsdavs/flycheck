@@ -591,5 +591,36 @@ export const flightData: FlightDetails[] = [
         }
       }
     }
+  },
+  {
+    flightNumber: 'DTK259',
+    airlineName: 'DELTA',
+    airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
+    departure: {
+      city: 'Birmingham, AL',
+      airportCode: 'BHM',
+      airport: 'Birmingham-Shuttlesworth International Airport',
+      time: '9:00 AM CT',
+      date: 'January 7, 2026'
+    },
+    arrival: {
+      city: 'Ontario, CA',
+      airportCode: 'ONT',
+      airport: 'Ontario International Airport',
+      time: '12:00 PM PT',
+      date: 'January 7, 2026'
+    },
+    passengerInfo: {
+      name: 'Melinda Smith Velma',
+      confirmationNumber: 'DKX7440DFX',
+      seatNumber: '12A',
+      class: 'Business Class',
+      passengerType: 'Adult',
+      dateOfBirth: '',
+      contactInfo: {
+        email: 'm**@gmail.com',
+        phone: '******'
+      }
+    }
   }
 ];
