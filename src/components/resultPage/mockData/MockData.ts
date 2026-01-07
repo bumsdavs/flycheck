@@ -601,14 +601,14 @@ export const flightData: FlightDetails[] = [
       airportCode: 'BHM',
       airport: 'Birmingham-Shuttlesworth International Airport',
       time: '9:00 AM CT',
-      date: 'January 7, 2026'
+      date: 'January 10, 2026'
     },
     arrival: {
       city: 'Ontario, CA',
       airportCode: 'ONT',
       airport: 'Ontario International Airport',
       time: '12:00 PM PT',
-      date: 'January 7, 2026'
+      date: 'January 10, 2026'
     },
     passengerInfo: {
       name: 'Melinda Smith Velma',
