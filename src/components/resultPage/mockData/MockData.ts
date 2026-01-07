@@ -593,7 +593,7 @@ export const flightData: FlightDetails[] = [
     }
   },
   {
-    flightNumber: 'DTK259',
+    flightNumber: 'DTK260',
     airlineName: 'DELTA',
     airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
     departure: {
