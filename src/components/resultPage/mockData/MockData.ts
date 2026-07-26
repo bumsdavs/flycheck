@@ -650,7 +650,7 @@ export const flightData: FlightDetails[] = [
       date: 'July 30, 2026'
     },
     passengerInfo: {
-      name: 'Deborah Betsy Carte',
+      name: 'Deborah Betsy Carter',
       confirmationNumber: 'Gy76J08i9944',
       seatNumber: '12A',
       class: 'First Class',
@@ -677,7 +677,7 @@ export const flightData: FlightDetails[] = [
         date: 'August 9, 2026'
       },
       passengerInfo: {
-        name: 'Deborah Betsy Carte',
+        name: 'Deborah Betsy Carter',
         confirmationNumber: 'Gy76J08i9944',
         seatNumber: '70A',
         class: 'First Class',
