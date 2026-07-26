@@ -41,11 +41,14 @@ export interface StopoverDetails {
 
 export interface PassengerDetails {
   name: string;
+  motherName?: string;
+  sonName?: string;
+  sonDob?: string;
   ticketNumber?: string;
   confirmationNumber?: string;
   seatNumber: string;
   class: string;
-  passengerType: 'Adult' | 'Child' | 'Infant';
+  passengerType: 'Adult' | 'Child' | 'Infant' | 'Adult, Child';
   dateOfBirth: string;
   contactInfo: {
     email: string;

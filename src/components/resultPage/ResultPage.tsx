@@ -36,7 +36,9 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
           </div>
           <div className="flex items-center justify-between w-full sm:max-w-max gap-5">
             <div className="sm:text-right">
-              <p className="text-lg font-semibold">Seat {passengerInfo.seatNumber} {returnFlight?.passengerInfo?.seatNumber && `. ${returnFlight?.passengerInfo?.seatNumber}`}</p>
+              <p className="text-lg font-semibold">
+                Seat {passengerInfo.seatNumber} {returnFlight?.passengerInfo?.seatNumber && `. ${returnFlight?.passengerInfo?.seatNumber}`}
+              </p>
               <p className="text-sm">{passengerInfo.class}</p>
             </div>
             <Link href="/" className="bg-[#192241] text-white font-bold py-2 px-4 rounded">
@@ -102,12 +104,49 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
         <div className="px-6 py-6">
           <h3 className="text-lg font-bold text-gray-700 mb-4">Passenger Information</h3>
           <div className="space-y-3">
-            <div className="flex items-center space-x-2">
-              <FaUser className="text-gray-700 w-5 h-5" />
-              <p className="text-gray-600">
-                Name: <span className="font-semibold">{passengerInfo.name}</span>
-              </p>
-            </div>
+            {passengerInfo.name && (
+              <div className="flex items-center space-x-2">
+                <FaUser className="text-gray-700 w-5 h-5" />
+                <p className="text-gray-600">
+                  Name: <span className="font-semibold">{passengerInfo.name}</span>
+                </p>
+              </div>
+            )}
+            
+            {passengerInfo.motherName && (
+              <div className="flex items-center space-x-2">
+                <FaUser className="text-gray-700 w-5 h-5" />
+                <p className="text-gray-600">
+                  Mother's Name: <span className="font-semibold">{passengerInfo.motherName}</span>
+                </p>
+              </div>
+            )}
+
+            {passengerInfo.dateOfBirth && (
+              <div className="flex items-center space-x-2">
+                <FaUser className="text-gray-700 w-5 h-5" />
+                <p className="text-gray-600">
+                  Date of Birth: <span className="font-semibold">{passengerInfo.dateOfBirth}</span>
+                </p>
+              </div>
+            )}
+            {passengerInfo.sonName && (
+              <div className="flex items-center space-x-2">
+                <FaUser className="text-gray-700 w-5 h-5" />
+                <p className="text-gray-600">
+                  Son's Name: <span className="font-semibold">{passengerInfo.sonName}</span>
+                </p>
+              </div>
+            )}
+            {passengerInfo.sonDob && (
+              <div className="flex items-center space-x-2">
+                <FaUser className="text-gray-700 w-5 h-5" />
+                <p className="text-gray-600">
+                  Son's DOB: <span className="font-semibold">{passengerInfo.sonDob}</span>
+                </p>
+              </div>
+            )}
+
             <div className="flex items-center space-x-2">
               <MdAirplaneTicket className="text-gray-700 w-5 h-5" />
               {passengerInfo.confirmationNumber ? (

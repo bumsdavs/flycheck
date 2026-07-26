@@ -711,12 +711,15 @@ export const flightData: FlightDetails[] = [
       date: 'August 10, 2026'
     },
     passengerInfo: {
-      name: 'Kerrie A Mills',
+      name: '',
+      motherName: 'Kerrie A Mills',
+      dateOfBirth: '07/12/1990',
+      sonName: 'Jason E Smith',
+      sonDob: '09/17/2021',
       confirmationNumber: 'DTK-80774879',
       seatNumber: '12A',
       class: 'First Class',
-      passengerType: 'Adult',
-      dateOfBirth: '',
+      passengerType: 'Adult, Child',
       contactInfo: {
         email: 'KERRIEMILLS10@GMAIL.COM',
         phone: '(612) 361-7114'
