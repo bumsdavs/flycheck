@@ -135,7 +135,7 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
             <div className="flex items-center space-x-2">
               <MdMarkEmailUnread className="text-gray-700 w-5 h-5" />
               <p className="text-gray-600">
-                Contact Email: <span className="font-semibold">{passengerInfo.contactInfo.email}</span>
+                Contact Email: <span className="font-semibold lowercase">{passengerInfo.contactInfo.email}</span>
               </p>
             </div>
             <div className="flex items-center space-x-2">
@@ -267,7 +267,7 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
               <div className="flex items-center space-x-2">
                 <MdMarkEmailUnread className="text-gray-700 w-5 h-5" />
                 <p className="text-gray-600">
-                  Contact Email: <span className="font-semibold">{returnFlight.passengerInfo?.contactInfo.email}</span>
+                  Contact Email: <span className="font-semibold lowercase">{returnFlight.passengerInfo?.contactInfo.email}</span>
                 </p>
               </div>
               <div className="flex items-center space-x-2">

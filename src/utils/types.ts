@@ -7,7 +7,8 @@ export interface FlightDetails {
   stopover?: StopoverDetails;
   passengerInfo: PassengerDetails;
   pricing?: PricingDetails;
-  dateCreated?: string;
+  createdAt?: string;
+  updatedAt?: string;
   returnFlight?: ReturnFlightDetails;
 }
 export interface ReturnFlightDetails  {
