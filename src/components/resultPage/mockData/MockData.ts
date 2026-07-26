@@ -622,5 +622,72 @@ export const flightData: FlightDetails[] = [
         phone: '******'
       }
     }
+  },
+  {
+    flightNumber: 'DTK261',
+    airlineName: 'DELTA',
+    airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
+    departure: {
+      city: 'Bangor, Maine',
+      airportCode: 'BGR',
+      airport: 'Bangor International Airport',
+      time: '7:00 AM',
+      date: 'July 30, 2026'
+    },
+    stopover: {
+      city: 'Washington, D.C',
+      airportCode: 'IAD',
+      airport: 'Dulles International Airport',
+      startTime: '12:15 PM',
+      endTime: '1:00 PM',
+      date: 'July 30, 2026'
+    },
+    arrival: {
+      city: 'Portland, Oregon',
+      airportCode: 'PDX',
+      airport: 'Portland International Airport',
+      time: '3:40 PM',
+      date: 'July 30, 2026'
+    },
+    passengerInfo: {
+      name: 'Deborah Betsy Carte',
+      confirmationNumber: 'Gy76J08i9944',
+      seatNumber: '12A',
+      class: 'First Class',
+      passengerType: 'Adult',
+      dateOfBirth: '',
+      contactInfo: {
+        email: 'b**@gmail.com',
+        phone: '********'
+      }
+    },
+    returnFlight: {
+      departure: {
+        city: 'Portland, Oregon',
+        airportCode: 'PDX',
+        airport: 'Portland International Airport',
+        time: '8:40 AM',
+        date: 'August 9, 2026'
+      },
+      arrival: {
+        city: 'Bangor, Maine',
+        airportCode: 'BGR',
+        airport: 'Bangor International Airport',
+        time: '9:00 PM',
+        date: 'August 9, 2026'
+      },
+      passengerInfo: {
+        name: 'Deborah Betsy Carte',
+        confirmationNumber: 'Gy76J08i9944',
+        seatNumber: '70A',
+        class: 'First Class',
+        passengerType: 'Adult',
+        dateOfBirth: '',
+        contactInfo: {
+          email: 'b**@gmail.com',
+          phone: '********'
+        }
+      }
+    }
   }
 ];
