@@ -42,6 +42,7 @@ export interface StopoverDetails {
 export interface PassengerDetails {
   name: string;
   motherName?: string;
+  motherDob?: string;
   sonName?: string;
   sonDob?: string;
   ticketNumber?: string;

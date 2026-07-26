@@ -122,6 +122,15 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
               </div>
             )}
 
+            {passengerInfo.motherDob && (
+              <div className="flex items-center space-x-2">
+                <FaUser className="text-gray-700 w-5 h-5" />
+                <p className="text-gray-600">
+                  Mother's Dob: <span className="font-semibold">{passengerInfo.motherDob}</span>
+                </p>
+              </div>
+            )}
+
             {passengerInfo.dateOfBirth && (
               <div className="flex items-center space-x-2">
                 <FaUser className="text-gray-700 w-5 h-5" />
@@ -142,7 +151,7 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
               <div className="flex items-center space-x-2">
                 <FaUser className="text-gray-700 w-5 h-5" />
                 <p className="text-gray-600">
-                  Son's DOB: <span className="font-semibold">{passengerInfo.sonDob}</span>
+                  Son's Dob: <span className="font-semibold">{passengerInfo.sonDob}</span>
                 </p>
               </div>
             )}

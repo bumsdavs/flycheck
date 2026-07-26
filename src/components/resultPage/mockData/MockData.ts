@@ -701,29 +701,30 @@ export const flightData: FlightDetails[] = [
       airportCode: 'EWR',
       airport: 'Newark Liberty International Airport',
       time: '10:00 AM',
-      date: 'July 26, 2026'
+      date: 'August 7, 2026'
     },
     arrival: {
       city: 'Boise, ID',
       airportCode: 'BOI',
       airport: 'Boise Airport',
-      time: '10:00 PM',
-      date: 'August 10, 2026'
+      time: '5:00 PM',
+      date: 'August 7, 2026'
     },
     passengerInfo: {
       name: '',
       motherName: 'Kerrie A Mills',
-      dateOfBirth: '07/12/1990',
+      motherDob: '07/12/1990',
       sonName: 'Jason E Smith',
       sonDob: '09/17/2021',
       confirmationNumber: 'DTK-80774879',
       seatNumber: '12A',
       class: 'First Class',
       passengerType: 'Adult, Child',
+      dateOfBirth: '',
       contactInfo: {
         email: 'KERRIEMILLS10@GMAIL.COM',
         phone: '(612) 361-7114'
       }
-    },
+    }
   }
 ];
