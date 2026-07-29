@@ -633,7 +633,7 @@ export const flightData: FlightDetails[] = [
       airportCode: 'BGR',
       airport: 'Bangor International Airport',
       time: '7:00 AM',
-      date: 'July 30, 2026'
+      date: 'August 3, 2026'
     },
     stopover: {
       city: 'Washington, D.C',
@@ -641,14 +641,14 @@ export const flightData: FlightDetails[] = [
       airport: 'Dulles International Airport',
       startTime: '12:15 PM',
       endTime: '1:00 PM',
-      date: 'July 30, 2026'
+      date: 'August 3, 2026'
     },
     arrival: {
       city: 'Portland, Oregon',
       airportCode: 'PDX',
       airport: 'Portland International Airport',
       time: '3:40 PM',
-      date: 'July 30, 2026'
+      date: 'August 3, 2026'
     },
     passengerInfo: {
       name: 'Deborah Betsy Carter',
