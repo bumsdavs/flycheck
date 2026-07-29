@@ -668,14 +668,14 @@ export const flightData: FlightDetails[] = [
         airportCode: 'PDX',
         airport: 'Portland International Airport',
         time: '8:40 AM',
-        date: 'August 9, 2026'
+        date: 'August 13, 2026'
       },
       arrival: {
         city: 'Bangor, Maine',
         airportCode: 'BGR',
         airport: 'Bangor International Airport',
         time: '9:00 PM',
-        date: 'August 9, 2026'
+        date: 'August 13, 2026'
       },
       passengerInfo: {
         name: 'Deborah Betsy Carter',
