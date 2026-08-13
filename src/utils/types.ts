@@ -10,6 +10,7 @@ export interface FlightDetails {
   createdAt?: string;
   updatedAt?: string;
   returnFlight?: ReturnFlightDetails;
+  isSample?: boolean;
 }
 export interface ReturnFlightDetails  {
   departure: LocationDetails;

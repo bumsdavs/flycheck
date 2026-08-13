@@ -10,7 +10,7 @@ interface ResultPageProps {
 }
 
 export default function ResultPage({ flightDetails }: ResultPageProps) {
-  const { flightNumber, airlineName, airlineLogo, departure, arrival, stopover, passengerInfo, pricing, returnFlight } = flightDetails;
+  const { flightNumber, airlineName, isSample, airlineLogo, departure, arrival, stopover, passengerInfo, pricing, returnFlight } = flightDetails;
 
   return (
     <div className="min-h-screen bg-[#11172b] sm:p-6">
@@ -47,6 +47,8 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
           </div>
         </div>
 
+        {isSample && <div className="absolute text-3xl">THIS IS FAKE</div>}
+
         {/* Flight Details */}
         <div className="px-6 py-6">
           <h3 className="text-lg font-bold text-gray-700 mb-4">Flight Details</h3>
@@ -57,7 +59,7 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
               <div>
                 <p className="text-gray-600">Departure</p>
                 <p className="font-semibold">
-                  {departure.date} : {departure.time}
+                  {departure.date}, {departure.time}
                 </p>
                 <p className="text-gray-600">
                   {departure.city} ({departure.airportCode})
@@ -65,6 +67,7 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
                 <p className="text-gray-400 text-sm">Airport: {departure.airport}</p>
               </div>
             </div>
+            {isSample && <div className="text-3xl">THIS IS FAKE</div>}
             {/* Stopover Section */}
             {stopover && (
               <div className="flex items-start space-x-2">
@@ -89,7 +92,7 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
               <div>
                 <p className="text-gray-600">Arrival</p>
                 <p className="font-semibold">
-                  {arrival.date} : {arrival.time}
+                  {arrival.date}, {arrival.time}
                 </p>
                 <p className="text-gray-600">
                   {arrival.city} ({arrival.airportCode})
@@ -99,6 +102,7 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
             </div>
           </div>
         </div>
+        {isSample && <div className="absolute text-3xl">THIS IS FAKE</div>}
 
         {/* Passenger Information */}
         <div className="px-6 py-6">
@@ -112,7 +116,7 @@ export default function ResultPage({ flightDetails }: ResultPageProps) {
                 </p>
               </div>
             )}
-            
+
             {passengerInfo.motherName && (
               <div className="flex items-center space-x-2">
                 <FaUser className="text-gray-700 w-5 h-5" />
