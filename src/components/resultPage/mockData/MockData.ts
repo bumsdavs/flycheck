@@ -253,8 +253,8 @@ export const flightData: FlightDetails[] = [
   },
   {
     flightNumber: 'DTK264',
-    airlineName: 'British Airways',
-    airlineLogo: 'https://iili.io/CQSvX71.jpg',
+    airlineName: 'Ryanair',
+    airlineLogo: 'https://iili.io/CQUxIOx.jpg',
     createdAt: '8/20/2026',
     isSample: false,
     departure: {
@@ -276,7 +276,7 @@ export const flightData: FlightDetails[] = [
       name: 'Karen Winther',
       confirmationNumber: 'DTK-80774264',
       seatNumber: '12A',
-      class: 'First Class',
+      class: 'Premium Economy',
       passengerType: 'Adult',
       dateOfBirth: '',
       contactInfo: {
