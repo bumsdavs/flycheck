@@ -5,37 +5,71 @@ export const flightData: FlightDetails[] = [
     flightNumber: 'SAMPLE',
     airlineName: 'DELTA',
     airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
+    createdAt: '7/25/2026',
     departure: {
-      city: 'New York',
-      airportCode: 'JFK',
-      time: '10:00 AM',
-      date: 'Sept 10, 2024'
+      city: 'Bangor, Maine',
+      airportCode: 'BGR',
+      airport: 'Bangor International Airport',
+      time: '7:00 AM',
+      date: 'August 3, 2026'
+    },
+    stopover: {
+      city: 'Washington, D.C',
+      airportCode: 'IAD',
+      airport: 'Dulles International Airport',
+      startTime: '12:15 PM',
+      endTime: '1:00 PM',
+      date: 'August 3, 2026'
     },
     arrival: {
-      city: 'London',
-      airportCode: 'LHR',
-      time: '10:00 PM',
-      date: 'Sept 10, 2024'
+      city: 'Portland, Oregon',
+      airportCode: 'PDX',
+      airport: 'Portland International Airport',
+      time: '3:40 PM',
+      date: 'August 3, 2026'
     },
     passengerInfo: {
-      name: 'John Doe',
-      ticketNumber: 'sample',
+      name: 'SAMPLE SAMPLE',
+      confirmationNumber: 'Gy76J08i9944',
       seatNumber: '12A',
-      class: 'Economy Class',
+      class: 'First Class',
       passengerType: 'Adult',
-      dateOfBirth: '1985-06-15',
+      dateOfBirth: '',
       contactInfo: {
-        email: 'john.doe@example.com',
-        phone: '+1234567890'
+        email: 'b**@gmail.com',
+        phone: '********'
       }
     },
-    pricing: {
-      ticketPrice: 350.0,
-      taxes: 50.0,
-      total: 400.0
+    returnFlight: {
+      departure: {
+        city: 'Portland, Oregon',
+        airportCode: 'PDX',
+        airport: 'Portland International Airport',
+        time: '8:40 AM',
+        date: 'August 13, 2026'
+      },
+      arrival: {
+        city: 'Bangor, Maine',
+        airportCode: 'BGR',
+        airport: 'Bangor International Airport',
+        time: '9:00 PM',
+        date: 'August 13, 2026'
+      },
+      passengerInfo: {
+        name: 'SAMPLE SAMPLE',
+        confirmationNumber: 'Gy76J08i9944',
+        seatNumber: '70A',
+        class: 'First Class',
+        passengerType: 'Adult',
+        dateOfBirth: '',
+        contactInfo: {
+          email: 'b**@gmail.com',
+          phone: '********'
+        }
+      }
     }
   },
-  {
+    {
     flightNumber: 'DTK260',
     airlineName: 'DELTA',
     airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
@@ -216,5 +250,39 @@ export const flightData: FlightDetails[] = [
       taxes: 0.0,
       total: 864.0
     }
+  },
+  {
+    flightNumber: 'DTK264',
+    airlineName: 'British Airways',
+    airlineLogo: 'https://iili.io/CQSvX71.jpg',
+    createdAt: '8/20/2026',
+    isSample: false,
+    departure: {
+      city: 'Kastrup, Denmark',
+      airportCode: 'CPH',
+      airport: 'Copenhagen Airport',
+      time: '07:20 AM',
+      date: 'August 26, 2026'
+    },
+    arrival: {
+      city: 'Myrtle Beach, SC',
+      airportCode: 'MYR',
+      airport: 'Myrtle Beach International Airport',
+      time: '06:51 PM',
+      date: 'August 26, 2026'
+    },
+
+    passengerInfo: {
+      name: 'Karen Winther',
+      confirmationNumber: 'DTK-80774264',
+      seatNumber: '12A',
+      class: 'First Class',
+      passengerType: 'Adult',
+      dateOfBirth: '',
+      contactInfo: {
+        email: 'karenwinther88@gmail.com',
+        phone: '279-208-5098'
+      }
+    },
   }
 ];
