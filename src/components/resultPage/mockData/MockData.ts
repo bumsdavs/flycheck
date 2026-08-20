@@ -69,7 +69,7 @@ export const flightData: FlightDetails[] = [
       }
     }
   },
-    {
+  {
     flightNumber: 'DTK260',
     airlineName: 'DELTA',
     airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
@@ -217,11 +217,11 @@ export const flightData: FlightDetails[] = [
       time: '2:00 PM',
       date: 'August 21, 2026'
     },
-     stopover: {
+    stopover: {
       city: 'Atlanta, GA',
       airportCode: 'ATL',
       airport: 'Hartsfield-Jackson Atlanta International Airport',
-     startTime: '4:15 PM',
+      startTime: '4:15 PM',
       endTime: '7:45 PM',
       date: 'August 21, 2026'
     },
@@ -245,7 +245,7 @@ export const flightData: FlightDetails[] = [
         phone: '******'
       }
     },
-     pricing: {
+    pricing: {
       ticketPrice: 864.0,
       taxes: 0.0,
       total: 864.0
@@ -262,6 +262,14 @@ export const flightData: FlightDetails[] = [
       airportCode: 'CPH',
       airport: 'Copenhagen Airport',
       time: '07:20 AM',
+      date: 'August 26, 2026'
+    },
+    stopover: {
+      city: 'London, United Kingdom',
+      airportCode: 'LHR',
+      airport: 'London Heathrow Airport',
+      startTime: '12:00 PM',
+      endTime: '04:00 PM',
       date: 'August 26, 2026'
     },
     arrival: {
@@ -283,6 +291,6 @@ export const flightData: FlightDetails[] = [
         email: 'karenwinther88@gmail.com',
         phone: '279-208-5098'
       }
-    },
+    }
   }
 ];
