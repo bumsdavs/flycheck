@@ -67,6 +67,11 @@ export const flightData: FlightDetails[] = [
           phone: '********'
         }
       }
+    },
+    pricing: {
+      ticketPrice: 310.0,
+      taxes: 0.0,
+      total: 310.0
     }
   },
   // {
