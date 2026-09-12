@@ -69,37 +69,37 @@ export const flightData: FlightDetails[] = [
       }
     }
   },
-  {
-    flightNumber: 'DTK260',
-    airlineName: 'DELTA',
-    airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
-    departure: {
-      city: 'Birmingham, AL',
-      airportCode: 'BHM',
-      airport: 'Birmingham-Shuttlesworth International Airport',
-      time: '9:00 AM CT',
-      date: 'January 10, 2026'
-    },
-    arrival: {
-      city: 'Ontario, CA',
-      airportCode: 'ONT',
-      airport: 'Ontario International Airport',
-      time: '12:00 PM PT',
-      date: 'January 10, 2026'
-    },
-    passengerInfo: {
-      name: 'Melinda Smith Velma',
-      confirmationNumber: 'DKX7440DFX',
-      seatNumber: '12A',
-      class: 'Business Class',
-      passengerType: 'Adult',
-      dateOfBirth: '',
-      contactInfo: {
-        email: 'm**@gmail.com',
-        phone: '******'
-      }
-    }
-  },
+  // {
+  //   flightNumber: 'DTK260',
+  //   airlineName: 'DELTA',
+  //   airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
+  //   departure: {
+  //     city: 'Birmingham, AL',
+  //     airportCode: 'BHM',
+  //     airport: 'Birmingham-Shuttlesworth International Airport',
+  //     time: '9:00 AM CT',
+  //     date: 'January 10, 2026'
+  //   },
+  //   arrival: {
+  //     city: 'Ontario, CA',
+  //     airportCode: 'ONT',
+  //     airport: 'Ontario International Airport',
+  //     time: '12:00 PM PT',
+  //     date: 'January 10, 2026'
+  //   },
+  //   passengerInfo: {
+  //     name: 'Melinda Smith Velma',
+  //     confirmationNumber: 'DKX7440DFX',
+  //     seatNumber: '12A',
+  //     class: 'Business Class',
+  //     passengerType: 'Adult',
+  //     dateOfBirth: '',
+  //     contactInfo: {
+  //       email: 'm**@gmail.com',
+  //       phone: '******'
+  //     }
+  //   }
+  // },
   {
     flightNumber: 'DTK261',
     airlineName: 'DELTA',
@@ -291,6 +291,87 @@ export const flightData: FlightDetails[] = [
         email: 'karenwinther88@gmail.com',
         phone: '279-208-5098'
       }
+    }
+  },
+  {
+    flightNumber: 'DTK265',
+    airlineName: 'DELTA',
+    airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
+    createdAt: '9/12/2026',
+    departure: {
+      city: 'Rapid City, South Dakota',
+      airportCode: 'RAP',
+      airport: 'Rapid City Regional Airport',
+      time: '8:40 AM',
+      date: 'Sept 13, 2026'
+    },
+    stopover: {
+      city: 'Fort Snelling, Minnesota',
+      airportCode: 'MSP',
+      airport: 'Minneapolis-Saint Paul International Airport',
+      startTime: '11:15 AM',
+      endTime: '12:20 PM',
+      date: 'Sept 13, 2026'
+    },
+    arrival: {
+      city: 'Cedar Rapids, Iowa',
+      airportCode: 'CID',
+      airport: 'Eastern Iowa Airport',
+      time: '1:30 PM',
+      date: 'Sept 13, 2026'
+    },
+    passengerInfo: {
+      name: 'Dorene Hanson',
+      confirmationNumber: 'DE76J089945',
+      seatNumber: '12A',
+      class: 'First Class',
+      passengerType: 'Adult',
+      dateOfBirth: '',
+      contactInfo: {
+        email: 'd**@gmail.com',
+        phone: '********'
+      }
+    },
+    returnFlight: {
+      departure: {
+        city: 'Cedar Rapids, Iowa',
+        airportCode: 'CID',
+        airport: 'Eastern Iowa Airport',
+        time: '9:15 AM',
+        date: 'Oct 13, 2026'
+      },
+      stopover: {
+        city: 'Fort Snelling, Minnesota',
+        airportCode: 'MSP',
+        airport: 'Minneapolis-Saint Paul International Airport',
+        startTime: '10:50 AM',
+        endTime: '11:55 AM',
+        date: 'Oct 13, 2026'
+      },
+      arrival: {
+        city: 'Rapid City, South Dakota',
+        airportCode: 'RAP',
+        airport: 'Rapid City Regional Airport',
+        time: '1:30 PM',
+        date: 'Oct 13, 2026'
+      },
+      passengerInfo: {
+        name: 'Dorene Hanson',
+        confirmationNumber: 'RE76J089945',
+        seatNumber: '70A',
+        class: 'First Class',
+        passengerType: 'Adult',
+        dateOfBirth: '',
+        contactInfo: {
+          email: 'd**@gmail.com',
+          phone: '********'
+        }
+      }
+    },
+    pricing: {
+      ticketPrice: 310.0,
+      taxes: 0.0,
+      total: 310.0
     }
   }
 ];
