@@ -2,7 +2,7 @@ import { FlightDetails } from '@/utils/types';
 
 export const flightData: FlightDetails[] = [
   {
-    flightNumber: 'SAMPLE',
+    flightNumber: 'DTKSAMPLE',
     airlineName: 'DELTA',
     airlineLogo: 'https://i.imgur.com/GQNPt6I.png',
     createdAt: '7/25/2026',
